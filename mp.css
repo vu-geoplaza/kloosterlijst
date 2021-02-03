@@ -246,5 +246,5 @@ p table tr:nth-child(odd) {
 
 p table td {
     border: none;
-    margin: 0px;
+    border-spacing: 0;
 }

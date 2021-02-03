@@ -4,7 +4,7 @@
 
     <title>Kloosterlijst VU</title>
     <meta http-equiv="content-type" content="text/html">
-    <link rel="stylesheet" type="text/css" href="mp.css"/>
+    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
     <!---Google Analytics--->
 </head>
 
@@ -29,13 +29,13 @@
     <img src="images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
     <h3 class="indent">Inleiding</h3>
     <hr class="indent">
-    <p class="indent"><!-- AddThis Button BEGIN -->
+    <p class="indent"><!-- AddThis Button BEGIN
         <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50698d6f63f348ad"><img
                     src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16"
                     alt="Bookmark and Share" style="border:0"/></a>
         <script type="text/javascript"
                 src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50698d6f63f348ad"></script>
-        <!-- AddThis Button END --></p>
+        AddThis Button END --></p>
     <p class="indent">
         <a href="#inl">Inleiding</a><br>
         <a href="#vv">Voorgaande versies</a><br>
@@ -960,13 +960,13 @@
     <!---Reacties
     Om reacties met verbeteringen en aanvullingen te vergemakkelijken is een invulformulier toegevoegd dat via het Menu kan worden aangeklikt.(nog toe te voegen)--->
 
-    <p class="indent"><!-- AddThis Button BEGIN -->
+    <p class="indent"><!-- AddThis Button BEGIN
         <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50698d6f63f348ad"><img
                     src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16"
                     alt="Bookmark and Share" style="border:0"/></a>
         <script type="text/javascript"
                 src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50698d6f63f348ad"></script>
-        <!-- AddThis Button END --></p>
+        AddThis Button END --></p>
 </div>
 
 <div id="rechts">

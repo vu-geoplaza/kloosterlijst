@@ -16,7 +16,7 @@ function qdbconn()
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="mp.css"/>
+    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
     <title>Kloosterlijst</title>
 </head>
 <body>

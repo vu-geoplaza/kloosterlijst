@@ -18,8 +18,8 @@
 <a href="col.php" class="menu">&raquo; Colofon</a><br />
 <br /><br /> 
 <hr class="hrmenu">
-<a href="http://www2.let.vu.nl/oz/monasteries/index.php" class="menu">&raquo; Engels</a> 
-<a href="http://www2.let.vu.nl/oz/monasteries/index.php" class="menu"><img src="images/english.png" border="0"></a>
+<a href="https://geoplaza.vu.nl/projects/monasteries/index.php" class="menu">&raquo; Engels</a>
+<a href="https://geoplaza.vu.nl/projects/monasteries/index.php" class="menu"><img src="images/english.png" border="0"></a>
 <hr class="hrmenu">
 </body>
 </html>

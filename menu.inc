@@ -1,6 +1,7 @@
 <html>
 <head>
     <LINK rel="stylesheet" href="mp.css" type="text/css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C600&#038;subset=latin&#038;display=swap' type='text/css' media='all' />
 </head>
 <body>
 <hr class="hrmenu">

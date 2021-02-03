@@ -1,75 +1,80 @@
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1"> 
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
     <LINK rel="stylesheet" href="mp.css" type="text/css">
     <title>details klooster</title>
 </head>
 <body>
 <div id="links">
-<?php
-include("menu.inc");
-?>
+    <?php
+    include("menu.inc");
+    ?>
 </div>
 
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Kloosterlijst</h1>
-<h3 class="indent">details</h3>
-<hr>
-<p>
-<?php
-    include('safe_params.inc');
-    $script_name = safe_str_html($_SERVER['PHP_SELF']);
-    $ID = '';
+    <table width="100%">
+        <tr>
+            <td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td>
+            <td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a>
+            </td>
+        </tr>
+    </table>
+    <h1 class="indent">Kloosterlijst</h1>
+    <h3 class="indent">details</h3>
+    <hr>
+    <p>
+        <?php
+        include('safe_params.inc');
+        $script_name = safe_str_html($_SERVER['PHP_SELF']);
+        $ID = '';
 
-    # $db = include 'db_kloosterlijst.inc';
-    $db = include('db_connect.inc');
-    if ($db) {
-	if(isset($_GET["ID"])) {
-	    $ID = (string) $_GET["ID"];
-	    if(!ctype_alnum($ID)) {
-		die('<p>invalid parameter value:<br/>' . safe_str_html($ID) . '</p>');
-	    }
-	}
-	$query_params = new Template_params();
-	if ($ID != '') {
-	    $ID_conditie = " AND ID = '%(ID)s'";
-	    $query_params->ID = $ID;
-	} else {
-	    $ID_conditie = '';
-	}
-	$query_template = new Sql_template();
-	$query_template->template = <<<END_OF_QUERY
+        # $db = include 'db_kloosterlijst.inc';
+        $db = include('db_connect.inc');
+        if ($db) {
+        if (isset($_GET["ID"])) {
+            $ID = (string)$_GET["ID"];
+            if (!ctype_alnum($ID)) {
+                die('<p>invalid parameter value:<br/>' . safe_str_html($ID) . '</p>');
+            }
+        }
+        $query_params = new Template_params();
+        if ($ID != '') {
+            $ID_conditie = " AND ID = '%(ID)s'";
+            $query_params->ID = $ID;
+        } else {
+            $ID_conditie = '';
+        }
+        $query_template = new Sql_template();
+        $query_template->template = <<<END_OF_QUERY
 	select  ID, TI, PA, CO, PT, AL, DI, PV, HG, GE, ST, FT, FI, CK, NS, SV, AR, LI, TE, MB, foto, MM, EV, LV, FO, VD, RM, AM, AA, AP, AST, DI2, PV2, ENK_code
 	FROM  	Kloosterlijst
 	WHERE   Kloosterlijst.ID = Kloosterlijst.ID				
 		$ID_conditie
 END_OF_QUERY;
 
-	$query = $query_template->interpolate($query_params);
+        $query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysqli_query($db, $query))) {
-	    echo 'invalid query.';
-	} else {
-	    $k_form_recordCount = mysqli_num_rows($result);
+        if (!($result = mysqli_query($db, $query))) {
+            echo 'invalid query.';
+        } else {
+        $k_form_recordCount = mysqli_num_rows($result);
 
-	    $html_template = new Html_template();
-	    $html_template->template = <<<END_OF_HTML
+        $html_template = new Html_template();
+        $html_template->template = <<<END_OF_HTML
 END_OF_HTML;
 
-	    echo $html_template->interpolate(array('ID' => $ID));
-	    if ($k_form_recordCount = 0) {
-		echo 'Geen resultaten gevonden.';
-	    } 
-		?>
-		<p>
-		<table bgcolor="#FFFFFF" cellpadding="3" cellspacing="2" border="2" bordercolor="#B94A85" class="indent" width="70%">
-		<?php
-		    $r = 0;
-		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
-			echo <<<END_OF_ENTRY
+        echo $html_template->interpolate(array('ID' => $ID));
+        if ($k_form_recordCount = 0) {
+            echo 'Geen resultaten gevonden.';
+        }
+        ?>
+    <p>
+    <table bgcolor="#FFFFFF" cellpadding="3" cellspacing="2" border="2" bordercolor="#B94A85" class="indent"
+           width="70%">
+        <?php
+        $r = 0;
+        while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
+            echo <<<END_OF_ENTRY
 			<tr><td valign="top"colspan="2" align="middle"><strong>$row->TI</strong></td></tr>
 			<tr><td valign="top" align="middle" width="40%"><IMG SRC="https://geoplaza.vu.nl/projects/kloosterlijst/foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
 			<tr><td valign="top" width="40%"><em>$row->FO</em></td> <td valign="top"><a href="http://geoplaza.vu.nl/projects/kloosters/" target="_blank">Volledige Kloosterkaart</a> op Geoplaza.</td></tr>
@@ -107,24 +112,24 @@ END_OF_HTML;
 
 	
 END_OF_ENTRY;
-		    }
-		?></table> 
-	    <?php
-	    }
-	    ?>
-	<?php
-	}
-?>
-</p>
-<p class="indent"><a href="javascript:history.back()"><strong>[terug naar resultatenset]</strong></a></p>
+        }
+        ?></table>
+    <?php
+    }
+    ?>
+    <?php
+    }
+    ?>
+    </p>
+    <p class="indent"><a href="javascript:history.back()"><strong>[terug naar resultatenset]</strong></a></p>
 </div>
 
 <div id="rechts">
 </div>
 <div id="onder">
-<p class="vu">
-<img src="images/vu.gif" width="195" height="24">
-</p>
+    <p class="vu">
+        <img src="images/vu.gif" width="195" height="24">
+    </p>
 </div>
 </body>
 </html>

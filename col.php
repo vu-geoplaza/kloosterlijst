@@ -13,7 +13,7 @@
 <div id="content">
     <table width="100%">
         <tr>
-            <td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td>
+            <td align="left"><a href="http://www.fgw.vu.nl"><img class="fgwlogo" src="images/fgw_logo.svg" border="0"></a></td>
             <td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a>
             </td>
         </tr>

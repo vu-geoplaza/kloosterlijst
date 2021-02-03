@@ -2,37 +2,38 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 82.5%;
+    font-family: Raleway;
+    color: #47425d;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 a:link {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0055A5;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:visited {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0055A5;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:active {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0055A5;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:hover {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0055A5;
+
+    color: #d65050;
     text-decoration: none
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -40,95 +41,84 @@ p {
 }
 
 td {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 th {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .rij {
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 82.5%;
     font-weight: bold;
 }
 
 ul {
-    font-size: 12px;
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 24px;
+h1, h2, h3, h4 {
     font-weight: bold;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
+    color: #443f3f;
+    font-weight: 600;
+
+}
+
+h1 {
+    font-size: 36px;
 }
 
 h2 {
     font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 h3 {
     font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 h4 {
     font-size: 14px;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 #links {
     float: left;
-    background: #0055A5;
+    background: #ffffff;
     width: 10%;
-    height: 86%;
+    height: 100%;
+    padding-top: 100px;
 }
 
 #rechts {
     float: left;
-    background: #0055A5;
+    background: #ffffff;
     width: 9.99%;
-    height: 86%;
+    height: 100%;
 }
 
 #content {
     float: left;
     background: #FFFFFF;
     width: 80%;
-    height: 86%;
+    height: 100%;
     overflow: auto;
     scrollbar-track-color: #FFFFFF;
-    font-size: 82.5%;
 }
 
 #onder {
     float: left;
-    background: #0055A5;
+    background: #ffffff;
     width: 100%;
-    height: 14%;
+    height: 0;
 }
 
 .active {
@@ -162,18 +152,6 @@ h4 {
     width: 250px;
 }
 
-.button {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ff;
-}
-
-.button:hover {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #B94A85;
-}
-
 .hrmenu {
     color: #ffffff;
     height: 1px;
@@ -182,57 +160,74 @@ h4 {
 
 
 a:link.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:visited.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:active.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:hover.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:link.menubr {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:visited.menubr {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:active.menubr {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
 a:hover.menubr {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+
+    color: #d65050;
     text-decoration: none
 }
 
+.fgwlogo {
+    width: 398px;
+    height: 75px;
+    margin-left: 40px;
+}
 
+.button {
+    background-color: #dd4b39;
+    border-color: #cccccc;
+    color: #ffffff;
+    border: 1px solid;
+    font-weight: 400;
+    padding: 8px;
+}
 
+.button:hover {
+    background-color: #007ecc;
+}
 
-
-
-
-	
+table {
+    border-width: 1px !important;
+    border-color: #cccccc;
+    border-style: dotted;
+}

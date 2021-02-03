@@ -14,7 +14,7 @@
 <div id="content">
     <table width="100%">
         <tr>
-            <td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td>
+            <td align="left"><a href="http://www.fgw.vu.nl"><img class="fgwlogo" src="images/fgw_logo.svg" border="0"></a></td>
             <td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a>
             </td>
         </tr>
@@ -76,7 +76,7 @@ END_OF_HTML;
         while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
             echo <<<END_OF_ENTRY
 			<tr><td valign="top"colspan="2" align="middle"><strong>$row->TI</strong></td></tr>
-			<tr><td valign="top" align="middle" width="40%"><IMG SRC="https://geoplaza.vu.nl/projects/kloosterlijst/foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
+			<tr><td valign="top" align="middle" width="40%"><IMG SRC="foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
 			<tr><td valign="top" width="40%"><em>$row->FO</em></td> <td valign="top"><a href="http://geoplaza.vu.nl/projects/kloosters/" target="_blank">Volledige Kloosterkaart</a> op Geoplaza.</td></tr>
 			<tr><td valign="top" width="40%"><strong>IDNR:</strong></td> <td valign="top">$row->ID</td></tr>
 			<tr><td valign="top" width="40%"><strong>Parochie:</strong></td> <td valign="top">$row->PA</td></tr>

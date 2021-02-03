@@ -50,10 +50,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $k_form_recordCount = mysql_num_rows($result);
+	    $k_form_recordCount = mysqli_num_rows($result);
 
 	    $html_template = new Html_template();
 	    $html_template->template = <<<END_OF_HTML
@@ -68,7 +68,7 @@ END_OF_HTML;
 		<table bgcolor="#FFFFFF" cellpadding="3" cellspacing="2" border="2" bordercolor="#B94A85" class="indent" width="70%">
 		<?php
 		    $r = 0;
-		    while (($row = mysql_fetch_object($result)) && $r++ <= $DisplayCount) {
+		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
 			echo <<<END_OF_ENTRY
 			<tr><td valign="top"colspan="2" align="middle"><strong>$row->TI</strong></td></tr>
 			<tr><td valign="top" align="middle" width="40%"><IMG SRC="http://www2.let.vu.nl/oz/kloosterlijst/foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>

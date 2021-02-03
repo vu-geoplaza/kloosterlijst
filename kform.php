@@ -1,13 +1,14 @@
 <?php
-$db = include('db_connect.inc');
+
+include('db_connect.inc');
 if(! $db) {
-	die("Kan niet verbinden: ".mysql_error());
+	die("Kan niet verbinden: ".mysqli_error());
 }
 ?>
 
 <?php
 function qdbconn() {
-mysql_close($db);
+    mysqli_close($db);
 }
 ?>
 
@@ -44,14 +45,14 @@ b.	Het komt niet in het bestand voor, omdat het is ge&euml;limineerd. Ga via het
     <td><strong>Titel:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT TI FROM Kloosterlijst", $db))){
+    if(! ($result = mysqli_query($db,"SELECT DISTINCT TI FROM Kloosterlijst"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optionti" class="size1">
-<option value="" SELECTED>- selecteer -</option> 
+<option value="" SELECTED>- selecteer -</option>
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[TI]\">$row[TI]</option>\n"; 
 } 
 ?>  
@@ -61,12 +62,12 @@ while ($row = mysql_fetch_array($result)) {
   </tr>
   <tr>
     <td><strong>Diocees:</strong><br />
-<?php $result = mysql_query("SELECT DISTINCT DI FROM Kloosterlijst ORDER BY DI", $db);
+<?php $result = mysqli_query($db,"SELECT DISTINCT DI FROM Kloosterlijst ORDER BY DI");
 ?>
 <select name="optiondi" class="size2">
 <option value="" SELECTED>- selecteer -</option> 
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[DI]\">$row[DI]</option>\n"; 
 } 
 ?>  
@@ -76,12 +77,12 @@ echo "<option value=\"$row[DI]\">$row[DI]</option>\n";
   </tr>
   <tr>
     <td><strong>Provincie, gewest, land:</strong><br />
-<?php $result = mysql_query("SELECT DISTINCT PV FROM Kloosterlijst ORDER BY PV", $db);
+<?php $result = mysqli_query($db,"SELECT DISTINCT PV FROM Kloosterlijst ORDER BY PV");
 ?>
 <select name="optionpv" class="size2"> 
 <option value="" SELECTED>- selecteer -</option>
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[PV]\">$row[PV]</option>\n"; 
 } 
 ?>  
@@ -91,12 +92,12 @@ echo "<option value=\"$row[PV]\">$row[PV]</option>\n";
   </tr>
   <tr>
     <td><strong>Gender:</strong> <br />
-<?php $result = mysql_query("SELECT DISTINCT GE FROM Kloosterlijst ORDER BY GE", $db);
+<?php $result = mysqli_query($db,"SELECT DISTINCT GE FROM Kloosterlijst ORDER BY GE");
 ?>
 <select name="optionge" class="size2"> 
 <option value="" SELECTED>- selecteer -</option>
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[GE]\">$row[GE]</option>\n"; 
 } 
 ?>  

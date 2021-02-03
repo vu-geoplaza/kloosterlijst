@@ -48,10 +48,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $c_form_recordCount = mysql_num_rows($result);
+	    $c_form_recordCount = mysqli_num_rows($result);
 
 	    $html_template = new Html_template();
 
@@ -81,7 +81,7 @@ END_OF_HTML;
 		<table border="0" cellpadding="4" cellspacing="2"><th align="left">Plaats</th><th align="left">Deel</th><th align="left">Blz</th><th align="left">Nr</th>
 		<?php
 		    $r = 0;
-		    while (($row = mysql_fetch_object($result)) && $r++ <= $DisplayCount) {
+		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
 			if ($r % 2 == 0) {
 			    $bgcolor = '#CCCCCC';
 			} else {

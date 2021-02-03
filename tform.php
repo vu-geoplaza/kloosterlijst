@@ -1,13 +1,13 @@
 <?php
 $db = include('db_connect.inc');
 if(! $db) {
-	die("Kan niet verbinden: ".mysql_error());
+	die("Kan niet verbinden: ".mysqli_error());
 }
 ?>
 
 <?php
 function qdbconn() {
-mysql_close($db);
+mysqli_close($db);
 }
 ?>
 
@@ -39,14 +39,14 @@ Indien u geen keuze maakt uit de lijst, krijgt u een overzicht van alle termijnh
     <td><strong>Termijnhuizen bij klooster:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT Klooster FROM Termijnhuizen ORDER BY Klooster", $db))){
+    if(! ($result = mysqli_query($db,"SELECT DISTINCT Klooster FROM Termijnhuizen ORDER BY Klooster"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optionti" class="size1">
 <option value="" SELECTED>- selecteer -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[Klooster]\">$row[Klooster]</option>\n"; 
 } 
 ?>  
@@ -65,14 +65,14 @@ while ($row = mysql_fetch_array($result)) {
     <td><strong>Selecteer een plaats:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT Plaats FROM Termijnhuizen ORDER BY Plaats", $db))){
+    if(! ($result = mysqli_query($db,"SELECT DISTINCT Plaats FROM Termijnhuizen ORDER BY Plaats"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optiontpl" class="size1">
 <option value="" SELECTED>- selecteer -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[Plaats]\">$row[Plaats]</option>\n"; 
 } 
 ?>  

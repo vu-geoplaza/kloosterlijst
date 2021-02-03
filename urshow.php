@@ -49,10 +49,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $k_form_recordCount = mysql_num_rows($result);
+	    $k_form_recordCount = mysqli_num_rows($result);
 
 	    $html_template = new Html_template();
 
@@ -69,7 +69,7 @@ END_OF_HTML;
 		<p>
 		<table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent" width="60%">
 		<?php
-		    while (($row = mysql_fetch_object($result))) {
+		    while (($row = mysqli_fetch_object($result))) {
 			echo <<<END_OF_ENTRY
 			<tr><td valign="top"><strong>Naam:</strong></td> <td valign="top">$row->Naam</td></tr>
 			<tr><td valign="top"><strong>Id Klooster:</strong></td> <td valign="top">$row->idnr_klooster</td></tr>

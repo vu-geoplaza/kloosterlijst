@@ -1,4 +1,5 @@
 <?php
+
 # safe_params.inc - safe parameter handling for scripts that insert user input
 # into sql, html or url code.
 
@@ -8,12 +9,15 @@
 #   The correct working of safe_str_sql depends on information about the
 #   character encoding expected by the database server as is provided
 #   by the active mysql connection object. So it is important to set up the
-#   database connection first by a call to mysql_connect BEFORE safe_str_sql
+#   database connection first by a call to mysqli_connect BEFORE safe_str_sql
 #   is used.
-
 # for insertion as a string parameter in mysql queries
-function safe_str_sql($value){ 
-   return mysql_real_escape_string($value); 
+function safe_str_sql($value){
+	$db = include('db_connect.inc');
+	if(! $db) {
+		die("Kan niet verbinden: ".mysqli_error());
+	}
+   return mysqli_real_escape_string($db, $value);
 } 
 
 # for insertion as a string parameter in html output

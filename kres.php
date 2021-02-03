@@ -8,6 +8,10 @@
 <div id="links">
 <?php
 include("menu.inc");
+include('db_connect.inc');
+if(! $db) {
+    die("Kan niet verbinden: ".mysqli_error());
+}
 ?>
 </div>
 
@@ -136,10 +140,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $k_form_recordCount = mysql_num_rows($result);
+	    $k_form_recordCount = mysqli_num_rows($result);
 
 	    if ($k_form_recordCount == 0) {
 		echo 'Geen resultaten gevonden.';
@@ -170,7 +174,7 @@ END_OF_HTML;
 		<th align="left">Patroonheilige</th><th align="left">Parochie</th><th align="left">Stadia</th><th align="left">Eerste vermelding</th><th align="left">Laatste vermelding</th>
 		<?php
 		    $r = 0;
-		    while (($row = mysql_fetch_object($result)) && $r++ <= $DisplayCount) {
+		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
 			if ($r % 2 == 0) {
 			    $bgcolor = '#CCCCCC';
 			} else {

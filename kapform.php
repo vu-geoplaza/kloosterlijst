@@ -1,13 +1,13 @@
 <?php
 $db = include('db_connect.inc');
 if(! $db) {
-	die("Kan niet verbinden: ".mysql_error());
+	die("Kan niet verbinden: ".mysqli_error());
 }
 ?>
 
 <?php
 function qdbconn() {
-mysql_close($db);
+mysqli_close($db);
 }
 ?>
 
@@ -39,14 +39,14 @@ include("menu.inc");
     <td><strong>Selecteer een plaats:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT Plaats FROM Kapittels ORDER BY Plaats", $db))){
+    if(! ($result = mysqli_query($db,"SELECT DISTINCT Plaats FROM Kapittels ORDER BY Plaats"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optionkappl" class="size1">
 <option value="" SELECTED>- selecteer -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[Plaats]\">$row[Plaats]</option>\n"; 
 } 
 ?>  

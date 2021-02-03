@@ -2,38 +2,33 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: #47425d;
     font-size: 16px;
     font-weight: 400;
 }
 
 a:link {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:visited {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:active {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:hover {
-
     color: #d65050;
     text-decoration: none
 }
 
 p {
-
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -42,8 +37,6 @@ p {
 
 td {
     line-height: 22px;
-    /*margin-top: 20px;
-    margin-bottom: 10px;*/
 }
 
 th {
@@ -53,7 +46,6 @@ th {
 }
 
 .rij {
-
     font-size: 82.5%;
     font-weight: bold;
 }
@@ -160,49 +152,41 @@ h4 {
 
 
 a:link.menu {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:visited.menu {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:active.menu {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:hover.menu {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:link.menubr {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:visited.menubr {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:active.menubr {
-
     color: #d65050;
     text-decoration: none
 }
 
 a:hover.menubr {
-
     color: #d65050;
     text-decoration: none
 }
@@ -247,4 +231,9 @@ p table tr:nth-child(odd) {
 p table td {
     border: none;
     border-spacing: 0;
+}
+
+.headerlink {
+    top: -35px;
+    position: relative;
 }

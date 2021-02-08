@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
+    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
     <title>details klooster</title>
 </head>
 <body>
@@ -69,7 +69,7 @@ END_OF_HTML;
         while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
             echo <<<END_OF_ENTRY
 			<tr><td valign="top"colspan="2" align="middle"><strong>$row->TI</strong></td></tr>
-			<tr><td valign="top" align="middle" width="40%"><IMG SRC="foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
+			<tr><td valign="top" align="middle" width="40%"><IMG SRC="../foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
 			<tr><td valign="top" width="40%"><em>$row->FO</em></td> <td valign="top"><a href="http://geoplaza.vu.nl/projects/kloosters/" target="_blank">Volledige Kloosterkaart</a> op Geoplaza.</td></tr>
 			<tr><td valign="top" width="40%"><strong>IDNR:</strong></td> <td valign="top">$row->ID</td></tr>
 			<tr><td valign="top" width="40%"><strong>Parochie:</strong></td> <td valign="top">$row->PA</td></tr>
@@ -121,7 +121,7 @@ END_OF_ENTRY;
 </div>
 <div id="onder">
     <p class="vu">
-        <img src="images/vu.gif" width="195" height="24">
+        <img src="../images/vu.gif" width="195" height="24">
     </p>
 </div>
 </body>

@@ -4,7 +4,7 @@
 
     <title>Kloosterlijst VU</title>
     <meta http-equiv="content-type" content="text/html">
-    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
+    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
     <!---Google Analytics--->
 </head>
 
@@ -19,7 +19,7 @@
 <div id="content">
     <?php include("header.inc");  ?>
     <h2 class="indent">Kloosterlijst. Beknopt overzicht van de Nederlandse kloosters tot 1800</h2>
-    <img src="images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
+    <img src="../images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
     <h3 class="indent">Inleiding</h3>
     <hr class="indent">
     <p class="indent"><!-- AddThis Button BEGIN
@@ -966,7 +966,7 @@
 </div>
 <div id="onder">
     <p class="vu">
-        <img src="images/vu.gif" width="195" height="24">
+        <img src="../images/vu.gif" width="195" height="24">
     </p>
 </div>
 

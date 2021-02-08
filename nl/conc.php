@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
+    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
     <title>kloosterlijst Concordantie resultaten</title>
 </head>
 <body>
@@ -109,7 +109,7 @@ END_OF_ENTRY;
 </div>
 <div id="onder">
     <p class="vu">
-        <img src="images/vu.gif" width="195" height="24">
+        <img src="../images/vu.gif" width="195" height="24">
     </p>
 </div>
 </body>

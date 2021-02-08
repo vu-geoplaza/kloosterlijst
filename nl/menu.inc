@@ -1,6 +1,6 @@
 <html>
 <head>
-    <LINK rel="stylesheet" href="mp.css" type="text/css">
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C600&#038;subset=latin&#038;display=swap' type='text/css' media='all' />
 </head>
 <body>
@@ -20,7 +20,7 @@
 <br/><br/>
 <hr class="hrmenu">
 <a href="https://geoplaza.vu.nl/projects/monasteries/index.php" class="menu">&raquo; Engels</a>
-<a href="https://geoplaza.vu.nl/projects/monasteries/index.php" class="menu"><img src="images/english.png"
+<a href="https://geoplaza.vu.nl/projects/monasteries/index.php" class="menu"><img src="../images/english.png"
                                                                                   border="0"></a>
 <hr class="hrmenu">
 </body>

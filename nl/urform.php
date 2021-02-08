@@ -16,7 +16,7 @@ function qdbconn()
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
+    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
     <title>Kloosterlijst</title>
 </head>
 <body>
@@ -28,17 +28,17 @@ function qdbconn()
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken naar termijnhuizen</h3>
+    <h3 class="indent">Zoeken naar uithoven en refugia</h3>
     <hr>
-    <p class="indent">Zoeken naar termijnhuizen, uitgaande van de kloosters waaraan ze zijn verbonden.<br>
-        Indien u geen keuze maakt uit de lijst, krijgt u een overzicht van alle termijnhuizen.
-    <form action="tres.php" method="post" class="indent">
+    <p class="indent">Zoeken naar uithoven en refugia, uitgaande van de kloosters waaraan ze zijn verbonden.<br>
+        Indien u geen keuze maakt uit de lijst, krijgt u een overzicht van alle uithoven en refugia.
+    <form action="urres.php" method="post" class="indent">
         <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
             <tr>
-                <td><strong>Termijnhuizen bij klooster:</strong><br/>
+                <td><strong>Zoeken naar uithoven en refugia bij klooster:</strong><br/>
                     <?php
                     include("input_cl.php");
-                    if (!($result = mysqli_query($db, "SELECT DISTINCT Klooster FROM Termijnhuizen ORDER BY Klooster"))) {
+                    if (!($result = mysqli_query($db, "SELECT DISTINCT Klooster FROM Uithoven ORDER BY Klooster"))) {
                         echo 'invalid query<br>';
                     }
                     ?>
@@ -60,22 +60,38 @@ function qdbconn()
     </form>
     </p>
 
-    <p class="indent">Zoeken naar termijnhuizen, uitgaande van hun plaats van vestiging.
-    <form action="tplres.php" method="post" class="indent">
+    <p class="indent">Zoeken naar uithoven en refugia, uitgaande van hun plaats van vestiging en/of hun naam.
+    <form action="urplres.php" method="post" class="indent">
         <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
             <tr>
-                <td><strong>Selecteer een plaats:</strong><br/>
+                <td><strong>Selecteer een plaats en/of naam:</strong><br/>
+                    Plaats:<br>
                     <?php
                     include("input_cl.php");
-                    if (!($result = mysqli_query($db, "SELECT DISTINCT Plaats FROM Termijnhuizen ORDER BY Plaats"))) {
+                    if (!($result = mysqli_query($db, "SELECT DISTINCT Plaats FROM Uithoven ORDER BY Plaats"))) {
                         echo 'invalid query<br>';
                     }
                     ?>
-                    <select name="optiontpl" class="size1">
+                    <select name="optionurpl" class="size1">
                         <option value="" SELECTED>- selecteer -</option>
                         <?php
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<option value=\"$row[Plaats]\">$row[Plaats]</option>\n";
+                        }
+                        ?>
+                    </select><br/>
+                    Naam:<br/>
+                    <?php
+                    include("input_cl.php");
+                    if (!($result = mysqli_query($db, "SELECT DISTINCT Naam FROM Uithoven ORDER BY Naam"))) {
+                        echo 'invalid query<br>';
+                    }
+                    ?>
+                    <select name="optionurn" class="size1">
+                        <option value="" SELECTED>- selecteer -</option>
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<option value=\"$row[Naam]\">$row[Naam]</option>\n";
                         }
                         ?>
                     </select>
@@ -93,7 +109,7 @@ function qdbconn()
 </div>
 <div id="onder">
     <p class="vu">
-        <img src="images/vu.gif" width="195" height="24">
+        <img src="../images/vu.gif" width="195" height="24">
     </p>
 </div>
 </body>

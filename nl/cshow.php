@@ -17,7 +17,7 @@
     <hr>
     <p>
         <?php
-        include('safe_params.inc');
+        include('../resources/safe_params.inc');
         # include("input_cl.php"); # conflicteert met safe_params.inc
         $script_name = safe_str_html($_SERVER['PHP_SELF']);
         $ID = '';

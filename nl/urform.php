@@ -5,13 +5,7 @@ if (!$db) {
 }
 ?>
 
-<?php
-function qdbconn()
-{
-    mysqli_close($db);
-}
 
-?>
 
 <html>
 <head>

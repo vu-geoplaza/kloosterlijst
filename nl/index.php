@@ -42,6 +42,7 @@
         <a href="#tohg">Toelichting op het gebruik</a><br>
         <a href="#tes">Thesaurus voor orde-aanduidingen</a><br>
         <a name="inl"><h3 class="indent">Inleiding</h3></a>
+    </p>
 
     <p class="indent">Deze Kloosterlijst wil antwoord geven op de vraag welke kloosters er in ons land tijdens de
         Middeleeuwen en in de Nieuwe Tijd zijn geweest, en welke dus niet. Het begrip &lsquo;klooster&rsquo; wordt

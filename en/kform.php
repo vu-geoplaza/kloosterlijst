@@ -1,15 +1,11 @@
 <?php
 $db = include('db_connect.inc');
 if(! $db) {
-	die("Kan niet verbinden: ".mysql_error());
+	die("Kan niet verbinden: ".mysqli_error());
 }
 ?>
 
-<?php
-function qdbconn() {
-mysql_close($db);
-}
-?>
+
 
 <html>
 <head>
@@ -25,10 +21,7 @@ include("menu.inc");
 ?>
 </div>
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Monasteries</h1>
+<?php include("header.inc"); ?>
 <h3 class="indent">Searching for monasteries</h3>
 <hr>
 <p class="indent">
@@ -45,14 +38,14 @@ b. It has been eliminated. Go to the <strong>List of Eliminations</strong> in th
     <td><strong>Title:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT TI FROM KloosterlijstEng", $db))){
+    if(! ($result = mysqli_query($db, "SELECT DISTINCT TI FROM KloosterlijstEng"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optionti" class="size1">
 <option value="" SELECTED>- select -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[TI]\">$row[TI]</option>\n"; 
 } 
 ?>  
@@ -62,12 +55,12 @@ while ($row = mysql_fetch_array($result)) {
   </tr>
   <tr>
     <td><strong>Diocese:</strong><br />
-<?php $result = mysql_query("SELECT DISTINCT DI FROM KloosterlijstEng ORDER BY DI", $db);
+<?php $result = mysqli_query($db, "SELECT DISTINCT DI FROM KloosterlijstEng ORDER BY DI");
 ?>
 <select name="optiondi" class="size2">
 <option value="" SELECTED>- select -</option> 
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[DI]\">$row[DI]</option>\n"; 
 } 
 ?>  
@@ -77,12 +70,12 @@ echo "<option value=\"$row[DI]\">$row[DI]</option>\n";
   </tr>
   <tr>
     <td><strong>Province:</strong><br />
-<?php $result = mysql_query("SELECT DISTINCT PV FROM KloosterlijstEng ORDER BY PV", $db);
+<?php $result = mysqli_query($db, "SELECT DISTINCT PV FROM KloosterlijstEng ORDER BY PV");
 ?>
 <select name="optionpv" class="size2"> 
 <option value="" SELECTED>- select -</option>
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[PV]\">$row[PV]</option>\n"; 
 } 
 ?>  
@@ -92,12 +85,12 @@ echo "<option value=\"$row[PV]\">$row[PV]</option>\n";
   </tr>
   <tr>
     <td><strong>Gender:</strong> <br />
-<?php $result = mysql_query("SELECT DISTINCT GE FROM KloosterlijstEng ORDER BY GE", $db);
+<?php $result = mysqli_query($db, "SELECT DISTINCT GE FROM KloosterlijstEng ORDER BY GE");
 ?>
 <select name="optionge" class="size2"> 
 <option value="" SELECTED>- select -</option>
 <?php  
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 echo "<option value=\"$row[GE]\">$row[GE]</option>\n"; 
 } 
 ?>  
@@ -129,7 +122,7 @@ echo "<option value=\"$row[GE]\">$row[GE]</option>\n";
 </div>
 <div id="onder">
 <p class="vu">
-<img src="images/vu.gif" width="195" height="24">
+<img src="../images/vu.gif" width="195" height="24">
 </p>
 </div>
 </body>

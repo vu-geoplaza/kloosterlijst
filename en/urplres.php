@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1"> 
-    <LINK rel="stylesheet" href="mp.css" type="text/css">
+    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
     <title>Monasteries in the Netherlands until 1800</title>
 </head>
 <body>
@@ -13,14 +13,14 @@ include("menu.inc");
 
 <div id="content">
 <table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
+<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="../images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="../images/grif.gif" width="312" height="104" border="0"></a></td>
 </tr></table>
 <h1 class="indent">Monasteries in the Netherlands until 1800</h1>
 <h3 class="indent">results granges and urban refuges</h3>
 <hr>
 <p>
 <?php
-    include('safe_params.inc');
+    include('../resources/safe_params.inc');
     $script_name = safe_str_html($_SERVER['PHP_SELF']);
     $optionurpl = '';
     $optionurn = '';
@@ -66,10 +66,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $k_form_recordCount = mysql_num_rows($result);
+	    $k_form_recordCount = mysqli_num_rows($result);
 
 	    $html_template = new Html_template();
 
@@ -101,7 +101,7 @@ END_OF_HTML;
 		<th>More info</th></tr>
 		<?php
 		    $r = 0;
-		    while (($row = mysql_fetch_object($result)) && $r++ <= $DisplayCount) {
+		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
 			if ($r % 2 == 0) {
 			    $bgcolor = '#CCCCCC';
 			} else {
@@ -129,7 +129,7 @@ END_OF_ENTRY;
 </div>
 <div id="onder">
 <p class="vu">
-<img src="images/vu.gif" width="195" height="24">
+<img src="../images/vu.gif" width="195" height="24">
 </p>
 </div>
 </body>

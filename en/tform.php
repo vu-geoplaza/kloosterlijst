@@ -1,15 +1,11 @@
 <?php
 $db = include('db_connect.inc');
 if(! $db) {
-	die("Kan niet verbinden: ".mysql_error());
+	die("Kan niet verbinden: ".mysqli_error());
 }
 ?>
 
-<?php
-function qdbconn() {
-mysql_close($db);
-}
-?>
+
 
 <html>
 <head>
@@ -25,10 +21,7 @@ include("menu.inc");
 ?>
 </div>
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Monasteries</h1>
+<?php include("header.inc"); ?>
 <h3 class="indent">Searching for houses of terminarii</h3>
 <hr>
 <p class="indent">Search for houses of <em>terminarii</em> starting from the monastery to which they belong. If you make no choice, a survey of all houses of <em>terminarii</em> will be shown.
@@ -38,14 +31,14 @@ include("menu.inc");
     <td><strong>Select a monastery:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT Monastery FROM TermijnhuizenEng ORDER BY Monastery", $db))){
+    if(! ($result = mysqli_query($db, "SELECT DISTINCT Monastery FROM TermijnhuizenEng ORDER BY Monastery"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optionti" class="size1">
 <option value="" SELECTED>- select -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[Monastery]\">$row[Monastery]</option>\n"; 
 } 
 ?>  
@@ -64,14 +57,14 @@ while ($row = mysql_fetch_array($result)) {
     <td><strong>Select a place:</strong><br /> 
 <?php 
 include("input_cl.php");
-    if(! ($result = mysql_query("SELECT DISTINCT Place FROM TermijnhuizenEng ORDER BY Place", $db))){
+    if(! ($result = mysqli_query($db, "SELECT DISTINCT Place FROM TermijnhuizenEng ORDER BY Place"))){
 	echo 'invalid query<br>';
     }
 ?>
 <select name="optiontpl" class="size1">
 <option value="" SELECTED>- select -</option> 
 <?php 
-while ($row = mysql_fetch_array($result)) { 
+while ($row = mysqli_fetch_array($result)) {
 	echo "<option value=\"$row[Place]\">$row[Place]</option>\n"; 
 } 
 ?>  
@@ -87,7 +80,7 @@ while ($row = mysql_fetch_array($result)) {
 </div>
 <div id="onder">
 <p class="vu">
-<img src="images/vu.gif" width="195" height="24">
+<img src="../images/vu.gif" width="195" height="24">
 </p>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1"> 
-    <LINK rel="stylesheet" href="mp.css" type="text/css">
+    <!-- <LINK rel="stylesheet" href="mp.css" type="text/css"> -->
     <title>Monasteries in the Netherlands until 1800</title>
 </head>
 <body>
@@ -12,15 +12,12 @@ include("menu.inc");
 </div>
 
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Monasteries</h1>
+<?php include("header.inc"); ?>
 <h3 class="indent">results</h3>
 <hr>
 <p>
 <?php
-    include('safe_params.inc');
+    include('../resources/safe_params.inc');
     $script_name = safe_str_html($_SERVER['PHP_SELF']);
 	$optionti = '';
 	$optiondi = '';
@@ -136,10 +133,10 @@ END_OF_QUERY;
 
 	$query = $query_template->interpolate($query_params);
 
-	if (! ($result = mysql_query($query, $db))) {
+	if (! ($result = mysqli_query($db, $query))) {
 	    echo 'invalid query.';
 	} else {
-	    $k_form_recordCount = mysql_num_rows($result);
+	    $k_form_recordCount = mysqli_num_rows($result);
 
 	    if ($k_form_recordCount == 0) {
 		echo 'Geen resultaten gevonden.';
@@ -170,7 +167,7 @@ END_OF_HTML;
 		<th align="left">Patron Saint</th><th align="left">Parish</th><th align="left">Development</th><th align="left">First mention</th><th align="left">Last mention</th>
 		<?php
 		    $r = 0;
-		    while (($row = mysql_fetch_object($result)) && $r++ <= $DisplayCount) {
+		    while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
 			if ($r % 2 == 0) {
 			    $bgcolor = '#CCCCCC';
 			} else {
@@ -198,7 +195,7 @@ END_OF_ENTRY;
 </div>
 <div id="onder">
 <p class="vu">
-<img src="images/vu.gif" width="195" height="24">
+<img src="../images/vu.gif" width="195" height="24">
 </p>
 </div>
 </body>

@@ -30,18 +30,15 @@ include("menu.inc");
 </div>
 
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Monasteries in the Netherlands until 1800</h1>
-<h2 class="indent">a census</h2>
-<img src="images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
+    <?php include("header.inc"); ?>
+<h2 class="indent">Monasteries in the Netherlands until 1800, a census</h2>
+<img src="../images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
 
 <hr class="indent">
-<p class="indent"><!-- AddThis Button BEGIN -->
+<p class="indent"><!-- AddThis Button BEGIN
 <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50698d6f63f348ad"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50698d6f63f348ad"></script>
-<!-- AddThis Button END --></p>
+AddThis Button END --></p>
 <p class="indent">
 <a href="#int">Introduction</a><br>
 <a href="#pv">The present version of the Census and the ENK encyclopaedia</a><br>
@@ -52,7 +49,7 @@ include("menu.inc");
 <a href="#hs">Historical survey</a><br>
 <a href="#efu">Explanation for users</a><br>
 <a href="#noo">Names of the Orders</a><br>
-
+</p>
 <a name="int"><h3 class="indent">Introduction</h3></a>
 
 <p class="indent">This census of medieval and Early Modern monasteries within the borders of the present-day Netherlands lists those monasteries and religious houses of whose existence we can be reasonably sure. The original Dutch version ‘Kloosterlijst’ was available on the Internet since 2008. At the occasion of the launching of an accompanyinginteractive Map (2017) a partial English version was offered. Now (2019) a complete English translation of the site can be published on the Internet, together with a final update of the various componentsFurther down in this Introduction a short historical survey will be given which explains the Dutch situation and its peculiarities to an audience that may be more familiar with the monastic landscape in the United Kingdom or in other parts of Europe.</p>
@@ -827,7 +824,7 @@ Implying: female Tertiaries belonging to the Third Order of St Francis.</p>--->
 </div>
 <div id="onder">
 <p class="vu">
-<img src="images/vu.gif" width="195" height="24">
+<img src="../images/vu.gif" width="195" height="24">
 </p>
 </div>
 

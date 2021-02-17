@@ -1,6 +1,7 @@
 <html>
 <head>
-<LINK rel="stylesheet" href="mp.css" type="text/css">
+<LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C600&#038;subset=latin&#038;display=swap' type='text/css' media='all' />
 </head>
 <body>
 <hr class="hrmenu">
@@ -21,8 +22,9 @@
 <a href="col.php" class="menu">&raquo; Colophon</a><br />
 <br /><br /> 
 <hr class="hrmenu">
-<a href="http://www2.let.vu.nl/oz/kloosterlijst/index.php" class="menu">&raquo; Dutch</a>
-<a href="http://www2.let.vu.nl/oz/kloosterlijst/index.php" class="menu"><img src="images/dutch.png" border="0"></a>
+
+<a href="<?= str_replace("en", "nl", $_SERVER['REQUEST_URI']) ?>" class="menu">&raquo; Dutch</a>
+<a href="<?= str_replace("en", "nl", $_SERVER['REQUEST_URI']) ?>" class="menu"><img src="../images/dutch.png" border="0"></a>
 <hr class="hrmenu">
 
 </body>

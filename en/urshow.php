@@ -12,10 +12,7 @@ include("menu.inc");
 </div>
 
 <div id="content">
-<table width="100%">
-<tr><td align="left"><a href="http://www.fgw.vu.nl"><img src="../images/logo_fgw.gif" border="0"></a></td><td align="right"><a href="http://www.vu.nl"><img src="../images/grif.gif" width="312" height="104" border="0"></a></td>
-</tr></table>
-<h1 class="indent">Monasteries in the Netherlands until 1800</h1>
+    <?php include("header.inc"); ?>
 <h3 class="indent">details</h3>
 <hr>
 <p>

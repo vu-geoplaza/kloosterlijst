@@ -101,7 +101,7 @@ if (!$db) {
             </tr>
             <tr>
                 <td align="center"></td>
-                <td><strong>Stadia: [<a href="thesaurusST.pdf" title="thesaurus stadia"
+                <td><strong>Stadia: [<a href="../images/thesaurusST.pdf" title="thesaurus stadia"
                                         target="_blank">thesaurus</a>]</strong> <br/>
                     <input type="text" name="st" class="size2"></td>
             </tr>

@@ -5,7 +5,7 @@
     <title>Monasteries in the Netherlands until 1800: a census</title>
     <meta http-equiv="content-type" content="text/html">
     <link rel="stylesheet" type="text/css" href="mp.css"/>
-    <!---Google Analytics--->
+    <!---Google Analytics
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -21,7 +21,7 @@
             s.parentNode.insertBefore(ga, s);
         })();
 
-    </script>
+    </script>--->
 </head>
 
 <body>
@@ -1243,13 +1243,13 @@ AddThis Button END --></p>
     Implying: female Tertiaries belonging to the Third Order of St Francis.</p>--->
 
 
-    <p class="indent"><!-- AddThis Button BEGIN -->
+    <p class="indent"><!-- AddThis Button BEGIN
         <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50698d6f63f348ad"><img
                     src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16"
                     alt="Bookmark and Share" style="border:0"/></a>
         <script type="text/javascript"
                 src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50698d6f63f348ad"></script>
-        <!-- AddThis Button END --></p>
+         AddThis Button END --></p>
 </div>
 
 <div id="rechts">

@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv=Content-Type content="text/html">
-    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <title>Bibliografie Kloosterlijst</title>
 
 

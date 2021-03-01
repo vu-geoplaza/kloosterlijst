@@ -11,7 +11,7 @@ if (!$db) {
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <title>Kloosterlijst</title>
 </head>
 <body>

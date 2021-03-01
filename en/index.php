@@ -1,10 +1,11 @@
 ﻿<html>
 
 <head>
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
 
     <title>Monasteries in the Netherlands until 1800: a census</title>
     <meta http-equiv="content-type" content="text/html">
-    <link rel="stylesheet" type="text/css" href="mp.css"/>
+
     <!---Google Analytics
     <script type="text/javascript">
 

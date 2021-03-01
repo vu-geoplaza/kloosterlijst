@@ -4,7 +4,7 @@
 
     <title>Kloosterlijst VU</title>
     <meta http-equiv="content-type" content="text/html">
-    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <!---Google Analytics--->
 </head>
 

@@ -1,8 +1,9 @@
 ﻿<html>
 
 <head>
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <meta http-equiv=Content-Type content="text/html">
-    <link rel="stylesheet" type="text/css" href="mp.css"/>
+
     <title>Monasteries in the Netherlands until 1800</title>
 
 

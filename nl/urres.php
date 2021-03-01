@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <title>kloosterlijst resultaten</title>
 </head>
 <body>

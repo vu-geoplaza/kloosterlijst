@@ -1,7 +1,8 @@
 ﻿<html>
 <head>
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <meta http-equiv="content-type" content="text/html">
-    <!-- <LINK rel="stylesheet" href="../resources/mp.css" type="text/css"> -->
+    <LINK rel="stylesheet" href="../resources/mp.css" type="text/css">
     <title>Kloosterlijst</title>
 </head>
 <body>

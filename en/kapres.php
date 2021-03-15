@@ -42,7 +42,7 @@
 
         $query_template = new Sql_template();
         $query_template->template = <<<END_OF_QUERY
-	SELECT  Idnr, Place, Diocese, Patron, Location, Latitude_dec, Longitude_dec, Foundation, Dissolution, Prebends, Founder, MeMo, Literature
+	SELECT  Idnr, Place, Diocese, Patron, Location, lat, lon, Foundation, Dissolution, Prebends, Founder, MeMo, Literature
 	FROM  	KapittelsEng
 	WHERE   Idnr = Idnr
 	$optionkappl_conditie
@@ -104,7 +104,7 @@ END_OF_HTML;
             }
             echo <<<END_OF_ENTRY
 			<tr bgcolor="$bgcolor">
-			<td valign="top">$row->Idnr</td><td valign="top">$row->Place</td><td valign="top">$row->Diocese</td><td valign="top">$row->Patron</td><td valign="top">$row->Location</td><td valign="top">$row->Latitude_dec</td><td valign="top">$row->Longitude_dec</td><td valign="top">$row->Foundation</td><td valign="top">$row->Dissolution</td><td valign="top">$row->Prebends</td><td valign="top">$row->Founder</td><td valign="top">$row->MeMo</td><td valign="top">$row->Literature</td>
+			<td valign="top">$row->Idnr</td><td valign="top">$row->Place</td><td valign="top">$row->Diocese</td><td valign="top">$row->Patron</td><td valign="top">$row->Location</td><td valign="top">$row->lat</td><td valign="top">$row->lon</td><td valign="top">$row->Foundation</td><td valign="top">$row->Dissolution</td><td valign="top">$row->Prebends</td><td valign="top">$row->Founder</td><td valign="top">$row->MeMo</td><td valign="top">$row->Literature</td>
 			</tr>
 END_OF_ENTRY;
         }

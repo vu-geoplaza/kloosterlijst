@@ -41,7 +41,7 @@
 
         $query_template = new Sql_template();
         $query_template->template = <<<END_OF_QUERY
-	SELECT  Idnr, Plaats, Bisdom, Patroonheilige, Locatie, Breedte_dec, Lengte_dec, Sticht, Opheffing, Prebenden, Stichter, MeMo, Literatuur, ENK
+	SELECT  Idnr, Plaats, Bisdom, Patroonheilige, Locatie, lat, lon, Stichting, Opheffing, Prebenden, Stichter, MeMo, Literatuur, ENK
 	FROM  	Kapittels
 	WHERE   Idnr = Idnr
 	$optionkappl_conditie
@@ -104,7 +104,7 @@ END_OF_HTML;
             }
             echo <<<END_OF_ENTRY
 			<tr bgcolor="$bgcolor">
-			<td valign="top">$row->Idnr</td><td valign="top">$row->Plaats</td><td valign="top">$row->Bisdom</td><td valign="top">$row->Patroonheilige</td><td valign="top">$row->Locatie</td><td valign="top">$row->Breedte_dec</td><td valign="top">$row->Lengte_dec</td>
+			<td valign="top">$row->Idnr</td><td valign="top">$row->Plaats</td><td valign="top">$row->Bisdom</td><td valign="top">$row->Patroonheilige</td><td valign="top">$row->Locatie</td><td valign="top">$row->lat</td><td valign="top">$row->lon</td>
 			<td valign="top">$row->Sticht</td><td valign="top">$row->Opheffing</td><td valign="top">$row->Prebenden</td><td valign="top">$row->Stichter</td><td valign="top">$row->MeMo</td><td valign="top">$row->Literatuur</td><td valign="top">$row->ENK</td>
 			</tr>
 END_OF_ENTRY;

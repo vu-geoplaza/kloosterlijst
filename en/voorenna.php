@@ -82,7 +82,7 @@
 
     
 
-    <h3 class="indent">Eén groot verhaal, werelden van verschil</h3>
+    <h3>Eén groot verhaal, werelden van verschil</h3>
 
     <p class='indent'>De historie van het kloosterleven
         heeft, wereldwijd maar zeker ook in Nederland, de eeuwen door in het teken

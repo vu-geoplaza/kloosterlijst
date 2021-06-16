@@ -22,7 +22,7 @@ if (!$db) {
 </div>
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Searching for monasteries</h3>
+    <h3>Searching for monasteries</h3>
     <hr>
     <p class="indent">
         If the monastery looked for is not found in the list of Titles there are two possibilities:<br>

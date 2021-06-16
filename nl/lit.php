@@ -17,7 +17,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Bibliografie</h3>
+    <h3>Bibliografie</h3>
     <hr>
     <p class="indent">
         <img src="pdf.jpg">

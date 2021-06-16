@@ -13,14 +13,14 @@
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Colofon</h3>
+    <h3>Colofon</h3>
     <hr>
-    <p class="indent">
+    <p>
         Samensteller: prof. em. dr. Koen Goudriaan (e-mail: goudriaan50-apenstaartje-gmail.com)<br/>
         Website en database: drs. Ben Stuyvenberg (<a
                 href="http://www.fgw.vu.nl/nl/over-de-faculteit/organisatie/bureau/index.asp" target="_blank">Bureau
-            Informatisering</a>, Faculteit der Geesteswetenschappen)<br/><br/>
-        Laatste wijziging: oktober 2019</p>
+            Informatisering</a>, Faculteit der Geesteswetenschappen) en Peter Vos (IT voor Onderzoek)<br/><br/>
+        Laatste wijziging: juni 2021</p>
 </div>
 <div id="rechts">
 </div>

@@ -22,12 +22,12 @@ if (!$db) {
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken naar termijnhuizen</h3>
+    <h3>Zoeken naar termijnhuizen</h3>
     <hr>
     <p class="indent">Zoeken naar termijnhuizen, uitgaande van de kloosters waaraan ze zijn verbonden.<br>
         Indien u geen keuze maakt uit de lijst, krijgt u een overzicht van alle termijnhuizen.
-    <form action="tres.php" method="post" class="indent">
-        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
+    <form action="tres.php" method="post">
+        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85">
             <tr>
                 <td><strong>Termijnhuizen bij klooster:</strong><br/>
                     <?php
@@ -55,8 +55,8 @@ if (!$db) {
     </p>
 
     <p class="indent">Zoeken naar termijnhuizen, uitgaande van hun plaats van vestiging.
-    <form action="tplres.php" method="post" class="indent">
-        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
+    <form action="tplres.php" method="post">
+        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85">
             <tr>
                 <td><strong>Selecteer een plaats:</strong><br/>
                     <?php

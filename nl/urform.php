@@ -22,7 +22,7 @@ if (!$db) {
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken naar uithoven en refugia</h3>
+    <h3>Zoeken naar uithoven en refugia</h3>
     <hr>
     <p class="indent">Zoeken naar uithoven en refugia, uitgaande van de kloosters waaraan ze zijn verbonden.<br>
         Indien u geen keuze maakt uit de lijst, krijgt u een overzicht van alle uithoven en refugia.

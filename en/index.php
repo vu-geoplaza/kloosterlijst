@@ -54,7 +54,7 @@ AddThis Button END --></p>
         <a href="#efu">Explanation for users</a><br>
         <a href="#noo">Names of the Orders</a><br>
     </p>
-    <a name="int"><h3 class="indent">Introduction</h3></a>
+    <a name="int"><h3>Introduction</h3></a>
 
     <p class="indent">This census of medieval and Early Modern monasteries within the borders of the present-day
         Netherlands lists those monasteries and religious houses of whose existence we can be reasonably sure. The
@@ -136,7 +136,7 @@ AddThis Button END --></p>
         further on in this Introduction as well as in the separate document ‘Monasteries before and after 1800’ (see
         Menu).</p>
 
-    <a name="pv"><h3 class="indent">The present version of the Census and the ENK encyclopaedia</h3></a>
+    <a name="pv"><h3>The present version of the Census and the ENK encyclopaedia</h3></a>
 
     <p class="indent">The Census ‘Medieval Monasteries in the Netherlands’ originally was launched in 2008, in Dutch
         only. Successive revisions and extensions appeared in April 2010, September 2012, winter 2014/5, summer 2016 and
@@ -160,7 +160,7 @@ AddThis Button END --></p>
         records for the monasteries in the intervening period (1600-1800) to the Census as well as to the ENK
         encyclopaedia, a task which has been fulfilled now.</p>
 
-    <a name="arch"><h3 class="indent">Archaeology</h3></a>
+    <a name="arch"><h3>Archaeology</h3></a>
 
     <p class="indent">Excavations of and archaeological observations in medieval monasteries sporadically already
         occurred from the nineteenth century onwards. But due to the Treaty of Malta (1992) and its national
@@ -189,7 +189,7 @@ AddThis Button END --></p>
         accessible registration system of archaeological finds in the Netherlands). This proved to be both a welcome
         check on the work I had already done and a supplement to the assembled data.</p>
 
-    <a name="grtc"><h3 class="indent">Granges and refuges, houses of <em>terminarii</em>, collegiate churches</h3></a>
+    <a name="grtc"><h3>Granges and refuges, houses of <em>terminarii</em>, collegiate churches</h3></a>
 
     <p class="indent">The 2012 revision saw the extension of the Census with two new components, one for granges and
         refuges, one for houses of <em>terminarii</em>. The confusion reigning in older literature around the
@@ -285,7 +285,7 @@ AddThis Button END --></p>
         institutions played a considerable role in the medieval remembrance of the dead (<em>memoria</em>), no less than
         fifty out of a total of seventy collegiate churches having an entry in MeMO. Therefore a separate field is
         reserved for references to MeMO.</p>
-    <a name="photos"><h3 class="indent">photos</h3></a>
+    <a name="photos"><h3>photos</h3></a>
 
     <p class="indent">Since the 2014/5 revision photographs are added to the descriptions of those monasteries which are
         still recognizable somehow in the public realm. Places of remembrance of the medieval monasteries come in
@@ -344,7 +344,7 @@ AddThis Button END --></p>
         provincial highway, but the statue once inthe chapel can still be revered in the twentieth-century parish church
         of the Assumption in the village.</p>
 
-    <a name="map"><h3 class="indent">Map</h3></a>
+    <a name="map"><h3>Map</h3></a>
 
     <p class="indent">After a draft version of the digital Map had been published in January 2016, which presented the
         situation as it was ca. 1500, the Map of Monasteries in its present format was launched in Spring 2017. The map
@@ -425,7 +425,7 @@ AddThis Button END --></p>
         receiving and the received institution have a notice. The Map continues with the receiving institution only.
     </p>
 
-    <a name="hs"><h3 class="indent">Historical survey</h3></a>
+    <a name="hs"><h3>Historical survey</h3></a>
 
     <p class="indent">In order to orient the user a succinct overview of the historical development of monastic life in
         the present-day Netherlands will be given. This made a late start in comparison with the surrounding countries,
@@ -628,7 +628,7 @@ AddThis Button END --></p>
         Roermond. The successive insertion of the remaining parts of the south in revolutionary France had as
         consequence that the French legislation, which entailed abolition of the monasteries, was applied here.</p>
 
-    <a name="efu"><h3 class="indent">Explanation for users</h3></a>
+    <a name="efu"><h3>Explanation for users</h3></a>
     <p class="indent">
         <img src="pdf.jpg">
         <a href="Explanation.pdf" target="_blank">Explanation for users</a> as of October 2019 [pdf 26 kb]</p>
@@ -808,7 +808,7 @@ AddThis Button END --></p>
     <p class="indent">Last mention: numerical field. Always consult the details in the field End of Monastic Life</p>--->
 
 
-    <a name="noo"><h3 class="indent">Names of the Orders</h3></a>
+    <a name="noo"><h3>Names of the Orders</h3></a>
 
     <p class="indent">In order to allow for searches on monastic orders, in the Development field a thesaurus has been
         applied which gives the standardised names under which the orders can be found, excluding synonyms. The ensuing

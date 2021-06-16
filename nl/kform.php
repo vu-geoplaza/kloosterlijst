@@ -23,7 +23,7 @@ if (!$db) {
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken in de kloosterlijst</h3>
+    <h3>Zoeken in de kloosterlijst</h3>
     <hr>
     <p class="indent">
         Indien het gezochte klooster in de Titellijst niet wordt gevonden, zijn er twee mogelijkheden:<br/>
@@ -33,8 +33,8 @@ if (!$db) {
     </p>
     <p>
 
-    <form action="kres.php" method="post" class="indent">
-        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
+    <form action="kres.php" method="post">
+        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85">
             <tr>
                 <td><strong>Titel:</strong><br/>
                     <?php

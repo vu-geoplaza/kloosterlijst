@@ -22,7 +22,7 @@ if (!$db) {
 </div>
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Searching for granges and urban refuges</h3>
+    <h3>Searching for granges and urban refuges</h3>
     <hr>
     <p class="indent">Search for granges and urban refuges starting from the monastery to which they belong. If you make
         no choice, a survey of all granges and urban refuges will be shown.

@@ -13,7 +13,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Topografische index</h3>
+    <h3>Topografische index</h3>
     <hr class="indent">
     <p class="indent">
         De Topografische Index bevat verwijzingen naar de verschillende componenten van de Kloosterlijst. Naar het

@@ -14,7 +14,7 @@
 
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Topographical Index</h3>
+    <h3>Topographical Index</h3>
     <hr class="indent">
     <p class="indent">
         The Topographical Index contains references to the various components of the Census. References to the main

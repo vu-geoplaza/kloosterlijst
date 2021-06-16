@@ -22,7 +22,7 @@ if (!$db) {
 </div>
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken naar kapittels</h3>
+    <h3>Zoeken naar kapittels</h3>
     <hr>
 
     <p class="indent">Zoeken naar kapittels, uitgaande van hun plaats en parochie.

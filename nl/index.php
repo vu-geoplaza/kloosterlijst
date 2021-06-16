@@ -40,7 +40,7 @@
         <a href="#kho">Kort historisch overzicht</a><br>
         <a href="#tohg">Toelichting op het gebruik</a><br>
         <a href="#tes">Thesaurus voor orde-aanduidingen</a><br>
-        <a name="inl"><h3 class="indent">Inleiding</h3></a>
+        <a name="inl"><h3>Inleiding</h3></a>
     </p>
 
     <p class="indent">Deze Kloosterlijst wil antwoord geven op de vraag welke kloosters er in ons land tijdens de
@@ -104,7 +104,7 @@
         document &lsquo;Kloosters voor en na 1800&rsquo; (zie Menu) nader ingegaan.</p>
 
     <a name="vv">
-        <h3 class="indent">Voorgaande versies</h3></a>
+        <h3>Voorgaande versies</h3></a>
     <p class="indent">In december 2008 werd de eerste versie van de Kloosterlijst op het web gezet. Daarna zijn,
         voorafgaande aan de huidige herziening, revisies verschenen in april 2010, september 2012, winter 2014/5,zomer
         2016 en maart 2017. Vanaf het begin is Ben Stuyvenberg als ict-er bij het project betrokken.</p>
@@ -141,7 +141,7 @@
 
 
     <a name="senk">
-        <h3 class="indent">Samenwerking met het Erfgoedcentrum Nederlands Kloosterleven</h3>
+        <h3>Samenwerking met het Erfgoedcentrum Nederlands Kloosterleven</h3>
     </a>
     <p class="indent">De Kloosterlijst is ontstaan als bijproduct van wetenschappelijk onderzoek naar aspecten van de
         Nederlandse kloostergeschiedenis. De gebruikers waarop de lijst zich richt zijn in eerste instantie de
@@ -159,7 +159,7 @@
 
 
     <a name="h17">
-        <h3 class="indent">Herziening 2019</h3>
+        <h3>Herziening 2019</h3>
     </a></p>
     <p class="indent">De herziene versie die nu (zomer 2019) op het web wordt geplaatst, en die als definitief is
         bedoeld, bevat weer enkele belangrijke vernieuwingen. In de eerste plaats is nu ook de periode van de Republiek
@@ -180,7 +180,7 @@
         in het naslagwerk van het ENK zijn standaard voorzien van verwijzingen (geen hyperlinks) naar die van de
         VU-Kloosterlijst , en omgekeerd is aan de Kloosterlijst een veld met referenties naar het ENK toegevoegd.</p>
 
-    <a name="arch"><h3 class="indent">Archeologie</h3></a>
+    <a name="arch"><h3>Archeologie</h3></a>
     <p class="indent">Opgravingen en archeologische waarnemingen hebben in onze middeleeuwse kloosters ook vroeger al
         wel plaatsgevonden, maar dankzij het Verdrag van Malta (1992) is dit onderzoeksterrein in een stroomversnelling
         geraakt. Oudere monastica hadden nog weinig aanleiding om aandacht te besteden aan materiële bronnen voor het
@@ -209,7 +209,7 @@
         ter beschikking. Dit betekende zowel een welkome onafhankelijke controle op de al verzamelde gegevens als een
         aanvulling daarop.</p>
 
-    <a name="urtk"><h3 class="indent">Uithoven en refugia, termijnhuizen,
+    <a name="urtk"><h3>Uithoven en refugia, termijnhuizen,
             kapittels</h3></a>
 
     <p class="indent">Sinds de herziening van september 2012 is de Kloosterlijst uitgebreid met enkele nieuwe
@@ -304,7 +304,7 @@
         speelden een relatief grote rol in de middeleeuwse <em>memoria</em>: niet minder dan vijftig van de ongeveer
         zeventig kapittels komen voor in MeMO: daarvoor is een apart veld opgenomen</p>
 
-    <a name="fotos"><h3 class="indent">Foto's</h3></a>
+    <a name="fotos"><h3>Foto's</h3></a>
 
     <p class="indent">Sinds de herziening van winter 2014/5 worden foto’s toegevoegd aan de beschrijving van die
         kloosters waarbij nog van enigerlei herkenbaarheid in het openbare domein sprake is. Plaatsen van herinnering
@@ -365,7 +365,7 @@
         kapel kan nog altijd worden vereerd, in de twintigste-eeuwse kerk van OLV Tenhemelopneming in het dorp
         Renkum.</p>
 
-    <a name="kk"><h3 class="indent">Kloosterkaart</h3></a>
+    <a name="kk"><h3>Kloosterkaart</h3></a>
 
     <p class="indent">Na de publicatie in 2016 van een proefversie die de situatie van circa 1500 weergaf, is de
         Kloosterkaart in zijn huidige vorm in het voorjaar van 2017 op het web gezet. Kenmerkend daarvoor is zijn
@@ -456,7 +456,7 @@
         de ontvangen gemeenschap een notitie. De kaart gaat alleen door met het ontvangende klooster.
     </p>
 
-    <a name="kho"><h3 class="indent">Kort historisch overzicht</h3></a>
+    <a name="kho"><h3>Kort historisch overzicht</h3></a>
 
     <p class="indent">Ter ori&euml;ntatie volgt hier een beknopt overzicht van de historische ontwikkeling van het
         kloosterwezen in Nederland. Vergeleken met de omringende landen is dit in het huidige Nederland laat tot
@@ -652,7 +652,7 @@
         Roermond gevoeld. Met de successievelijke inschakeling van de rest van het zuiden in het revolutionaire
         Frankrijk werd daar de op opheffing gerichte Franse wetgeving van kracht.</p>
 
-    <a name="tohg"><h3 class="indent">Toelichting op het gebruik</h3></a>
+    <a name="tohg"><h3>Toelichting op het gebruik</h3></a>
 
     <p class="indent">
         <img src="pdf.jpg">
@@ -798,7 +798,7 @@
     <p class="indent">Laatste vermelding: numeriek veld. Raadpleeg ook altijd de bijzonderheden vermeld in het veld 'Einde kloosterleven'.</p> --->
 
 
-    <a name="tes"><h3 class="indent">Thesaurus voor orde-aanduidingen</h3></a>
+    <a name="tes"><h3>Thesaurus voor orde-aanduidingen</h3></a>
 
     <p class="indent">Voor de aanduiding van de orden waartoe de kloosters behoorden is de gangbare terminologie
         gebruikt. In de literatuur komt men nogal eens vrouwenconventen ‘van de derde orde van Augustinus’ tegen. In

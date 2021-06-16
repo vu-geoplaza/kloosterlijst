@@ -14,7 +14,7 @@
 
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Survey of correspondences</h3>
+    <h3>Survey of correspondences</h3>
     <hr>
     <p>
         <?php

@@ -13,7 +13,7 @@
 </div>
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Searching for correspondences</h3>
+    <h3>Searching for correspondences</h3>
     <hr>
     <p>
     <p class="indent">Search for correspondences between <em>Monasticon Batavum</em> and the Census. Give in a place

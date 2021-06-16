@@ -13,7 +13,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">volledig record uithof/refugium</h3>
+    <h3>volledig record uithof/refugium</h3>
     <hr>
     <p>
         <?php
@@ -64,8 +64,7 @@ END_OF_HTML;
         }
         ?>
     <p>
-    <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent"
-           width="60%">
+    <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" width="60%">
         <?php
         while (($row = mysqli_fetch_object($result))) {
             echo <<<END_OF_ENTRY

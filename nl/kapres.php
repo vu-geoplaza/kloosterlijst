@@ -13,7 +13,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">resultatenoverzicht kapittels</h3>
+    <h3>resultatenoverzicht kapittels</h3>
     <hr>
     <p>
         <?php

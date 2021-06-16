@@ -13,7 +13,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Eliminatielijst</h3>
+    <h3>Eliminatielijst</h3>
     <hr class="indent">
     <p class="indent">
         <img src="pdf.jpg">

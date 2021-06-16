@@ -14,7 +14,7 @@
 
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">List of eliminations</h3>
+    <h3>List of eliminations</h3>
     <hr class="indent">
     <p class="indent">
         <img src="pdf.jpg">

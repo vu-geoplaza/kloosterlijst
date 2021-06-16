@@ -13,7 +13,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">details</h3>
+    <h3>details</h3>
     <hr>
     <p>
         <?php
@@ -62,14 +62,13 @@ END_OF_HTML;
         }
         ?>
     <p>
-    <table bgcolor="#FFFFFF" cellpadding="3" cellspacing="2" border="2" bordercolor="#B94A85" class="indent"
-           width="70%">
+    <table bgcolor="#FFFFFF" cellpadding="3" cellspacing="2" border="2" bordercolor="#B94A85" width="70%">
         <?php
         $r = 0;
         while (($row = mysqli_fetch_object($result)) && $r++ <= $DisplayCount) {
             echo <<<END_OF_ENTRY
 			<tr><td valign="top"colspan="2" align="middle"><strong>$row->TI</strong></td></tr>
-			<tr><td valign="top" align="middle" width="40%"><IMG SRC="../foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters/locatie.html?id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
+			<tr><td valign="top" align="middle" width="40%"><IMG SRC="../foto/$row->foto" title="$row->FO"></td> <td valign="top"><iframe src="https://geoplaza.vu.nl/projects/kloosters_vue/index.html?nomenu=t&language=nl&id=$row->ID" style="width:100%;height:350px;border:none;"></iframe></td></tr><br>
 			<tr><td valign="top" width="40%"><em>$row->FO</em></td> <td valign="top"><a href="http://geoplaza.vu.nl/projects/kloosters/" target="_blank">Volledige Kloosterkaart</a> op Geoplaza.</td></tr>
 			<tr><td valign="top" width="40%"><strong>IDNR:</strong></td> <td valign="top">$row->ID</td></tr>
 			<tr><td valign="top" width="40%"><strong>Parochie:</strong></td> <td valign="top">$row->PA</td></tr>

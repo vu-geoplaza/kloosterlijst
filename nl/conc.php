@@ -14,7 +14,7 @@
 
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Overzicht concordantie</h3>
+    <h3>Overzicht concordantie</h3>
     <hr>
     <p>
         <?php

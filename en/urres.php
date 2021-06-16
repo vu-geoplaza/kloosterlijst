@@ -14,7 +14,7 @@
 
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">results for granges and urban refuges</h3>
+    <h3>results for granges and urban refuges</h3>
     <hr>
     <p>
         <?php

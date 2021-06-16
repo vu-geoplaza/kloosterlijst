@@ -22,7 +22,7 @@ if (!$db) {
 </div>
 <div id="content">
     <?php include("header.inc"); ?>
-    <h3 class="indent">Searching for collegiate churches</h3>
+    <h3>Searching for collegiate churches</h3>
     <hr>
 
     <p class="indent">Search for collegiate churches according to location (parish).

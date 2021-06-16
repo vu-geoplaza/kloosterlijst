@@ -13,11 +13,11 @@
 </div>
 <div id="content">
 <?php include("header.inc"); ?>
-    <h3 class="indent">Zoeken in de concordantie</h3>
+    <h3>Zoeken in de concordantie</h3>
     <hr>
     <p>
     <form action="conc.php" method="post" class="indent">
-        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85" class="indent">
+        <table bgcolor="#FFFFFF" cellpadding="2" cellspacing="5" border="2" bordercolor="#B94A85">
             <tr>
                 <td>
                     <strong>Plaatsnaam:</strong><br/>

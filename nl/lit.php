@@ -21,7 +21,7 @@
     <hr>
     <p class="indent">
         <img src="pdf.jpg">
-        <a href="BiblioVersie2018.pdf" target="_blank">Bibliografie</a> per 2018 [pdf 618 kb].
+        <a href="BiblioVersie2020.pdf" target="_blank">Bibliografie</a> per 2018 [pdf 618 kb].
     </p>
     <p class="indent">
         <img src="pdf.jpg">

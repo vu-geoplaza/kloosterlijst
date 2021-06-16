@@ -20,7 +20,6 @@
     <?php include("header.inc");  ?>
     <h2 class="indent">Kloosterlijst. Beknopt overzicht van de Nederlandse kloosters tot 1800</h2>
     <img src="../images/klooster.jpg" width="199" height="150" align="right" alt="Tertiarissenklooster in Elburg">
-    <h3 class="indent">Inleiding</h3>
     <hr class="indent">
     <p class="indent"><!-- AddThis Button BEGIN
         <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50698d6f63f348ad"><img
@@ -29,7 +28,7 @@
         <script type="text/javascript"
                 src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50698d6f63f348ad"></script>
         AddThis Button END --></p>
-    <p class="indent">
+    <p>
         <a href="#inl">Inleiding</a><br>
         <a href="#vv">Voorgaande versies</a><br>
         <a href="#senk">Samenwerking met het Erfgoedcentrum Nederlands Kloosterleven</a><br>

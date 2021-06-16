@@ -15,6 +15,7 @@
 <a href="topverw.php" class="menu">&raquo; Topografische</a><br/>
 <a href="topverw.php" class="menubr">index</a><br/>
 <a href="lit.php" class="menu">&raquo; Bibliografie&euml;n</a><br/>
+<a href="voorenna.php" class="menu">&raquo; Voor en na 1800</a><br/>
 <a href="col.php" class="menu">&raquo; Colofon</a><br/>
 <br/><br/>
 <hr class="hrmenu">

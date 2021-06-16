@@ -1,5 +1,7 @@
 body {
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
     padding: 0px;
     overflow: hidden;
     font-family: Raleway, Arial;
@@ -85,7 +87,7 @@ h4 {
 #links {
     float: left;
     background: #ffffff;
-    width: 10%;
+    width: 200px;
     height: 100%;
     padding-top: 100px;
 }
@@ -123,7 +125,7 @@ h4 {
 }
 
 .indent {
-    margin-left: 40px;
+    text-indent: 40px;
 }
 
 .menu {

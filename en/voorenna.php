@@ -642,10 +642,7 @@
 
     <p class='indent'>
         J.P.A. van Vugt, <i>Broeders in de katholieke beweging. De
-            werkzaamheden van vijf </i></p>
-
-    <p class='indent'>
-        <i>Nederlandse onderwijscongregaties van broeders en
+            werkzaamheden van vijf  Nederlandse onderwijscongregaties van broeders en
             fraters, 1840-1970</i>. Nijmegen 1994. </p>
 
     
@@ -696,7 +693,8 @@
 
     <p class='indent'>Joos van Vugt, Kloosters op
         schrift. Een bibliografie over orden en congregaties in Nederland in de
-        negentiende en twintigste eeuw. De vijfde, bijgewerkte uitgave (2015) is te
+        negentiende en twintigste eeuw.
+        <br>De vijfde, bijgewerkte uitgave (2015) is te
         raadplegen via de website van de Radboud Universiteit Nijmegen (Radboud
         Repository): <a href="https://repository.ubn.ru.nl/handle/2066/134988">https://repository.ubn.ru.nl/handle/2066/134988</span></a><a
             href="https://repository.ubn.ru.nl/handle/2066/134988">.</a> Bovendien is de bibliografie omgezet in het

@@ -642,10 +642,7 @@
 
     <p class='indent'>
         J.P.A. van Vugt, <i>Broeders in de katholieke beweging. De
-            werkzaamheden van vijf </i></p>
-
-    <p class='indent'>
-        <i>Nederlandse onderwijscongregaties van broeders en
+            werkzaamheden van vijf  Nederlandse onderwijscongregaties van broeders en
             fraters, 1840-1970</i>. Nijmegen 1994. </p>
 
     
@@ -694,22 +691,19 @@
 
     
 
-    <p class='indent'>Joos van Vugt, Kloosters op
+    <p class='indent'>Joos van Vugt, <i>Kloosters op
         schrift. Een bibliografie over orden en congregaties in Nederland in de
-        negentiende en twintigste eeuw. De vijfde, bijgewerkte uitgave (2015) is te
+            negentiende en twintigste eeuw.</i>
+        <br>De vijfde, bijgewerkte uitgave (2015) is te
         raadplegen via de website van de Radboud Universiteit Nijmegen (Radboud
         Repository): <a href="https://repository.ubn.ru.nl/handle/2066/134988">https://repository.ubn.ru.nl/handle/2066/134988</span></a><a
-            href="https://repository.ubn.ru.nl/handle/2066/134988">.</a> Bovendien is de bibliografie omgezet in het
+            href="https://repository.ubn.ru.nl/handle/2066/134988">.</a>
+        <br>Bovendien is de bibliografie omgezet in het
         databestand ‘Kloosters op schrift’ dat te raadplegen is via de website van het
         Erfgoedcentrum Nederlands
         Kloosterleven: <a
-            href="https://www.erfgoedkloosterleven.nl/zoeken/collecties-zoeken.php?mivast=1212&amp;mizig=74&amp;miadt=1212&amp;milang=nl&amp;miview=tbl">
-            https://www.erfgoedkloosterleven.nl/zoeken/collecties</span></a><a
-            href="https://www.erfgoedkloosterleven.nl/zoeken/collecties-zoeken.php?mivast=1212&amp;mizig=74&amp;miadt=1212&amp;milang=nl&amp;miview=tbl"></a><a
-            href="https://www.erfgoedkloosterleven.nl/zoeken/collecties-zoeken.php?mivast=1212&amp;mizig=74&amp;miadt=1212&amp;milang=nl&amp;miview=tbl">
-            zoeken.php?mivast=1212&amp;mizig=74&amp;miadt=1212&amp;milang=nl&amp;miview=tbl</span></a><a
-            href="https://www.erfgoedkloosterleven.nl/zoeken/collecties-zoeken.php?mivast=1212&amp;mizig=74&amp;miadt=1212&amp;milang=nl&amp;miview=tbl"><span
-                style='color:black;text-decoration:none'> </span></a></p>
+            href="https://www.erfgoedkloosterleven.nl/zoeken/collecties-zoeken.php?mivast=1212&mizig=74&miadt=1212&miaet=14&micode=DOC-KOS&minr=1134233&milang=nl&misort=unitdate|desc&miview=ldt">
+            https://www.erfgoedkloosterleven.nl/zoeken/collecties</a></p>
 </div>
 
 

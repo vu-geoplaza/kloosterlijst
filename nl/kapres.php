@@ -105,7 +105,7 @@ END_OF_HTML;
             echo <<<END_OF_ENTRY
 			<tr bgcolor="$bgcolor">
 			<td valign="top">$row->Idnr</td><td valign="top">$row->Plaats</td><td valign="top">$row->Bisdom</td><td valign="top">$row->Patroonheilige</td><td valign="top">$row->Locatie</td><td valign="top">$row->lat</td><td valign="top">$row->lon</td>
-			<td valign="top">$row->Sticht</td><td valign="top">$row->Opheffing</td><td valign="top">$row->Prebenden</td><td valign="top">$row->Stichter</td><td valign="top">$row->MeMo</td><td valign="top">$row->Literatuur</td><td valign="top">$row->ENK</td>
+			<td valign="top">$row->Stichting</td><td valign="top">$row->Opheffing</td><td valign="top">$row->Prebenden</td><td valign="top">$row->Stichter</td><td valign="top">$row->MeMo</td><td valign="top">$row->Literatuur</td><td valign="top">$row->ENK</td>
 			</tr>
 END_OF_ENTRY;
         }

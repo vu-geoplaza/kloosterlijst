@@ -6,22 +6,19 @@
 </head>
 <body>
 <hr class="hrmenu">
-<a href="index.php" class="menu">&raquo; Introduction</a><br/>
-<a href="kform.php" class="menu">&raquo; Monasteries</a><br/>
-<a href="urform.php" class="menu">&raquo; Granges &</em></a><br/>
-<a href="urform.php" class="menu">Refuges</em></a><br/>
-<a href="tform.php" class="menu">&raquo; Houses of</em></a><br/>
-<a href="tform.php" class="menu">terminarii</em></a><br/>
-<a href="kapform.php" class="menu">&raquo; Collegiate</em></a><br/>
-<a href="kapform.php" class="menu">churches</em></a><br/>
-<a href="elim.php" class="menu">&raquo; List of</a><br/>
-<a href="elim.php" class="menu">Eliminations</a><br/>
-<a href="czoek.php" class="menu">&raquo; Concordance</a><br/>
-<a href="topverw.php" class="menu">&raquo; Topographical</a><br/>
-<a href="topverw.php" class="menu">Index</a><br/>
-<a href="lit.php" class="menu">&raquo; Bibliographies</a><br/>
-<a href="col.php" class="menu">&raquo; Colophon</a><br/>
-<br/><br/>
+<ul class="menulist">
+    <li><a href="index.php" class="menu">&raquo; Introduction</a></li>
+    <li><a href="kform.php" class="menu">&raquo; Monasteries</a></li>
+    <li><a href="urform.php" class="menu">&raquo; Granges & Refuges</em></a></li>
+    <li><a href="tform.php" class="menu">&raquo; Houses of terminarii</em></a></li>
+    <li><a href="kapform.php" class="menu">&raquo; Collegiate churches</em></a></li>
+    <li><a href="elim.php" class="menu">&raquo; List of Eliminations</a></li>
+    <li><a href="czoek.php" class="menu">&raquo; Concordance</a></li>
+    <li><a href="topverw.php" class="menu">&raquo; Topographical Index</a></li>
+    <li><a href="lit.php" class="menu">&raquo; Bibliographies</a></li>
+    <li><a href="col.php" class="menu">&raquo; Colophon</a></li>
+</ul>
+<br><br>
 <hr class="hrmenu">
 
 <a href="<?= str_replace("en", "nl", $_SERVER['REQUEST_URI']) ?>" class="menu">&raquo; Dutch</a>

@@ -251,3 +251,15 @@ p table td {
     font-size: 40px;
     padding: 20px;
 }
+
+.menulist {
+    padding-left: 0px;
+}
+
+.menulist li {
+    list-style: none;
+}
+
+.menulist a {
+    font-weight: 800;
+}

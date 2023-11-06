@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  kloosterlijst-web:
+    restart: unless-stopped
+    container_name: kloosterlijst-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - 8081:80
+    depends_on:
+      - kloosterlijst-db
+
+  kloosterlijst-db:
+    container_name: ${DB_HOST}
+    restart: unless-stopped
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PW}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PW}
+    volumes:
+      - /docker/kloosterlijst/mysql_data:/var/lib/mysql
+

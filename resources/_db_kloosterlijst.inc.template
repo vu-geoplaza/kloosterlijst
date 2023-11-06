@@ -1,7 +1,0 @@
-<?php
-// rename to _db_kloosterlijst.inc and add credentials
-Global $db;
-$db = mysqli_connect('localhost', 'dbuser', 'dppassword', 'dbname');
-mysqli_set_charset($db, 'utf8');
-return $db;
-?>

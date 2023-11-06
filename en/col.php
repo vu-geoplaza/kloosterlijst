@@ -17,9 +17,7 @@
     <hr>
     <p class="indent">
         Assembled by: prof. em. dr. Koen Goudriaan</a> (e-mail: goudriaan50-at-gmail.com)<br/>
-        Website and database: Ben Stuyvenberg MA (<a
-                href="https://www.fgw.vu.nl/nl/over-de-faculteit/organisatie/bureau/index.asp" target="_blank">Bureau
-            Informatisering</a>, Faculty of Humanities) and Peter Vos (IT for Research) <br/><br/>
+        Website and database: Ben Stuyvenberg MA (Faculty of Humanities) and Peter Vos (IT for Research) <br/><br/>
         Last update: June 2021</p>
 </div>
 <div id="rechts">

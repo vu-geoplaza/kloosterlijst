@@ -19,8 +19,8 @@
 </ul>
 <br/><br/>
 <hr class="hrmenu">
-<a href="<?= str_replace("nl", "en", $_SERVER['REQUEST_URI']) ?>" class="menu">&raquo; Engels</a>
-<a href="<?= str_replace("nl", "en", $_SERVER['REQUEST_URI']) ?>"><img src="../images/english.png" border="0"></a>
+<a href="<?= str_replace("nl", "projects/kloosterlijst/en", $_SERVER['REQUEST_URI']) ?>" class="menu">&raquo; Engels</a>
+<a href="<?= str_replace("nl", "projects/kloosterlijst/en", $_SERVER['REQUEST_URI']) ?>"><img src="../images/english.png" border="0"></a>
 <hr class="hrmenu">
 </body>
 </html>

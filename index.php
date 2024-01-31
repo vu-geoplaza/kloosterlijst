@@ -1,5 +1,4 @@
 <?php
-// 301 Moved Permanently
-header("Location: nl/index.php", true, 301);
+header("Location: kloosterlijst/nl/index.php", true, 302);
 exit();
 ?>

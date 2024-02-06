@@ -20,10 +20,15 @@
 </ul>
 <br><br>
 <hr class="hrmenu">
-
-<a href="<?= str_replace("en", "projects/kloosterlijst/nl", $_SERVER['REQUEST_URI']) ?>" class="menu">&raquo; Dutch</a>
-<a href="<?= str_replace("en", "projects/kloosterlijst/nl", $_SERVER['REQUEST_URI']) ?>" class="menu"><img src="../images/dutch.png"
-                                                                                    border="0"></a>
+<?php
+    $parsed = parse_url($_SERVER['REQUEST_URI']);
+    $lang_url = '../nl/' . basename($_SERVER['SCRIPT_NAME']);
+    if (str_starts_with($parsed['query'], 'ID=')) {
+        $lang_url = $lang_url . '?' . 'ID=' . substr($parsed['query'], 3, 8);
+    }
+?>
+<a href=<?=$lang_url ?> class="menu">&raquo; Dutch</a>
+<a href=<?=$lang_url ?> class="menu"><img src="../images/dutch.png" border="0"></a>
 <hr class="hrmenu">
 
 </body>

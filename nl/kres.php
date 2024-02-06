@@ -7,7 +7,7 @@
 <body>
 <div id="links">
     <?php
-    include("menu.inc");
+    include("menu.inc.php");
     include('db_connect.inc');
     if (!$db) {
         die("Kan niet verbinden: " . mysqli_error());

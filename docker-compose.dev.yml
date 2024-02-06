@@ -13,6 +13,8 @@ services:
       - 8081:80
     depends_on:
       - kloosterlijst-db
+    volumes:
+      - .:/var/www/html
 
   kloosterlijst-db:
     container_name: ${DB_HOST}
@@ -25,3 +27,6 @@ services:
       MYSQL_PASSWORD: ${DB_PW}
     volumes:
       - /docker/kloosterlijst/mysql_data:/var/lib/mysql
+      - ./dump:/dump
+
+ 

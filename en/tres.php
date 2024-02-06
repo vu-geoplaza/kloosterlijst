@@ -8,7 +8,7 @@
 <body>
 <div id="links">
     <?php
-    include("menu.inc");
+    include("menu.inc.php");
     ?>
 </div>
 

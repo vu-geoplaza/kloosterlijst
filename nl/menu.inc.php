@@ -22,8 +22,12 @@
 <?php
     $parsed = parse_url($_SERVER['REQUEST_URI']);
     $lang_url = '../en/' . basename($_SERVER['SCRIPT_NAME']);
-    if (str_starts_with($parsed['query'], 'ID=')) {
-        $lang_url = $lang_url . '?' . 'ID=' . substr($parsed['query'], 3, 8);
+    if ($parsed['query']) {
+        $param = explode('=', $parsed['query'])[0];
+        $value = explode('=', $parsed['query'])[1];
+        if (in_array(strtolower($param),['id','id_ur'])) {
+            $lang_url = $lang_url . '?' . $param . '=' . substr($value, 0, 5);
+        }
     }
 ?>
 <a href="<?=$lang_url ?>" class="menu">&raquo; Dutch</a>

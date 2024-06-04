@@ -31,7 +31,7 @@
         }
     }
 ?>
-<a href=<?=$lang_url ?> class="menu">&raquo; Dutch</a>
+<a href=<?=$lang_url ?> class="menu">&raquo; Nederlands</a>
 <a href=<?=$lang_url ?> class="menu"><img src="../images/dutch.png" border="0"></a>
 <hr class="hrmenu">
 
